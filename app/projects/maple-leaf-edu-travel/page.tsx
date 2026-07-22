@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { capabilities } from "@/content/capabilities";
 import { project001 } from "@/content/projects";
 import { CallToAction } from "@/components/call-to-action";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = { title: "Project 001 — Maple Leaf Edu Travel", description: "The first project applying Laicai OS to international K12 education travel." };
+export const metadata = createMetadata("Project 001 — Maple Leaf Edu Travel", "An incubation thesis applying the Laicai OS operating model to international K12 education travel.", "/projects/maple-leaf-edu-travel");
 
 export default function Project001() {
   return <>

@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { CallToAction } from "@/components/call-to-action";
 import { capabilities, flywheel } from "@/content/capabilities";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = { title: "Capabilities — Laicai OS", description: "Four connected capabilities for brand intelligence, content, knowledge and growth." };
+export const metadata = createMetadata("Capabilities — Laicai OS", "Discover four connected capabilities for brand intelligence, content, knowledge systems and growth.", "/capabilities");
 
 export default function Capabilities() {
   return <>

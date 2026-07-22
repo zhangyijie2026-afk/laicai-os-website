@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import { whatsappUrl } from "@/content/navigation";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = { title: "Contact — Laicai OS", description: "Start a conversation with Laicai OS about projects, operating systems or partnerships." };
+export const metadata = createMetadata("Contact — Laicai OS", "Contact Laicai OS to discuss project incubation, operating-system design, brand systems or partnerships.", "/contact");
 
 export default function Contact() {
   return <>

@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = { title: "About — Laicai OS", description: "The thesis, principles and long-term vision behind Laicai OS." };
+export const metadata = createMetadata("About — Laicai OS", "Explore the thesis, operating principles and long-term vision behind Laicai OS.", "/about");
 
 const principles = [
   ["System over task", "Design the operating loop, not only the next output."],

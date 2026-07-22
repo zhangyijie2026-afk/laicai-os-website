@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/page-hero";
 import { project001 } from "@/content/projects";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = { title: "Projects — Laicai OS", description: "Controlled environments for applying and validating the Laicai OS operating model." };
+export const metadata = createMetadata("Projects — Laicai OS", "Explore controlled project environments for applying, testing and improving the Laicai OS operating model.", "/projects");
 const lifecycle = ["Discover", "Define", "Build", "Operate", "Learn", "Scale"];
 
 export default function Projects() {
