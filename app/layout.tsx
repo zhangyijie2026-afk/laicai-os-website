@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
   title: "Laicai OS — Build Brands. Operate Growth.",
@@ -12,7 +14,11 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        <main>{children}</main>
+        <SiteFooter />
+      </body>
     </html>
   );
 }

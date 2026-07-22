@@ -1,0 +1,20 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { capabilities } from "@/content/capabilities";
+import { project001 } from "@/content/projects";
+import { CallToAction } from "@/components/call-to-action";
+
+export const metadata: Metadata = { title: "Project 001 — Maple Leaf Edu Travel", description: "The first project applying Laicai OS to international K12 education travel." };
+
+export default function Project001() {
+  return <>
+    <section className="case-hero"><div className="shell"><div className="project-meta"><span>{project001.number}</span><span>{project001.category}</span></div><p className="case-status">{project001.status}</p><h1>{project001.name}</h1><p className="case-positioning">{project001.positioning}</p><div className="actions"><Link className="primary-button inverted" href="/contact">Discuss a project</Link><Link className="text-link light" href="/capabilities">Explore capabilities →</Link></div></div></section>
+    <section className="section shell two-col"><div><div className="section-label">THE OPPORTUNITY</div><h2>Build an education brand around authentic learning experiences in China.</h2></div><div className="large-copy"><p>The project explores how a clear brand and operating system can serve international K12 education travel.</p><p>This is an incubation thesis, not a claim of established market performance.</p></div></section>
+    <section className="section shell split-list"><div><div className="section-label">THE CHALLENGE</div><h2>Connect the work before scaling it.</h2></div><div><p>Positioning, products, operations, content, outreach and organizational knowledge need to work as one system.</p><p>The project is not simply about creating accounts. It tests whether Laicai OS can build an international brand from zero.</p></div></section>
+    <section className="section shell"><div className="section-heading"><div className="section-label">SYSTEM APPLIED</div><h2>All four capabilities, applied to one project.</h2></div><div className="capability-grid">{capabilities.map((item) => <article className="capability-card" key={item.number}><span>{item.number}</span><h3>{item.title}</h3><p>{item.summary}</p></article>)}</div></section>
+    <section className="section shell"><div className="section-heading"><div className="section-label">WORKSTREAMS</div><h2>The operating surface.</h2></div><div className="tag-list">{["Brand", "Products", "Operations", "Content", "Distribution", "Partnerships", "Measurement"].map((item) => <span key={item}>{item}</span>)}</div></section>
+    <section className="section shell evidence-panel"><div><div className="section-label">EVIDENCE AND MILESTONES</div><h2>No unverified outcomes published.</h2></div><div><p>Verified milestones, artifacts and measured results will be added only with a named source and measurement period.</p><div className="status-row"><span>IN PROGRESS</span><strong>Brand and operating foundation</strong></div><div className="status-row"><span>PLANNED</span><strong>Evidence register and measurement baseline</strong></div></div></section>
+    <section className="section shell two-col"><div><div className="section-label">LEARNING LOOP</div><h2>Project work should improve the system.</h2></div><div className="large-copy"><p>Decisions, workflows and evidence from Project 001 will be captured as reusable knowledge for later operating cycles.</p><p>The next phase remains planned until its inputs, owners and measurement approach are defined.</p></div></section>
+    <CallToAction label="BUILD WITH LAICAI" title="Discuss a project with a real operating challenge." copy="Start with the problem, the users and the evidence you need to create." href="/contact" action="Discuss a project" />
+  </>;
+}
