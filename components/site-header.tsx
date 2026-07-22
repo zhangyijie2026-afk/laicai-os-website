@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navigation } from "@/content/navigation";
+import { navigation, whatsappUrl } from "@/content/navigation";
 
 export function SiteHeader() {
   return (
@@ -13,7 +13,14 @@ export function SiteHeader() {
           {navigation.slice(1).map((item) => (
             <Link href={item.href} key={item.href}>{item.label}</Link>
           ))}
-          <Link className="nav-cta" href="/contact">Start a conversation</Link>
+          <a
+            className="nav-cta"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Start a conversation
+          </a>
         </nav>
         <details className="mobile-nav">
           <summary>Menu</summary>
