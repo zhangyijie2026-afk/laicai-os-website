@@ -1,0 +1,6 @@
+import { YoutubeWorkbenchShell } from "@/components/youtube-workbench-shell";
+import { videos } from "@/content/youtube-workbench";
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata = createMetadata("YouTube Videos — Project 001", "Video-level YouTube performance for Project 001.", "/projects/maple-leaf-edu-travel/youtube/videos");
+export default function YoutubeVideos() { return <YoutubeWorkbenchShell active="Videos" eyebrow="CONTENT LIBRARY" title="Every video should teach the system something." copy="Compare performance, identify the next edit, and keep missing data visible rather than guessed."><section className="dashboard-panel table-panel"><div className="panel-heading"><div><span>ALL CONTENT</span><h2>7 published assets</h2></div><small>1 detailed snapshot · 6 awaiting import</small></div><div className="video-table"><div className="video-row video-table-head"><span>Video</span><span>Views</span><span>Avg watch</span><span>Stayed</span><span>Action</span></div>{videos.map((video) => <article className="video-row" key={video.id}><div><small>{video.id} · {video.format}</small><strong>{video.title}</strong></div><b>{video.views}</b><span>{video.averageWatch}</span><span>{video.stayed}</span><em className={video.tone}>{video.status}</em></article>)}</div></section></YoutubeWorkbenchShell>; }
