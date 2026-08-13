@@ -1,18 +1,23 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://laicaios.com";
+const routes = [
+  "",
+  "/about",
+  "/capabilities",
+  "/projects",
+  "/projects/maple-leaf-edu-travel",
+  "/projects/maple-leaf-edu-travel/youtube",
+  "/projects/maple-leaf-edu-travel/youtube/videos",
+  "/projects/maple-leaf-edu-travel/youtube/daily",
+  "/projects/maple-leaf-edu-travel/youtube/retention",
+  "/contact",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    { url: baseUrl, changeFrequency: "monthly", priority: 1 },
-    { url: `${baseUrl}/about`, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/capabilities`, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${baseUrl}/projects`, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/projects/maple-leaf-edu-travel`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/projects/maple-leaf-edu-travel/youtube`, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${baseUrl}/projects/maple-leaf-edu-travel/youtube/videos`, changeFrequency: "weekly", priority: 0.5 },
-    { url: `${baseUrl}/projects/maple-leaf-edu-travel/youtube/daily`, changeFrequency: "weekly", priority: 0.5 },
-    { url: `${baseUrl}/projects/maple-leaf-edu-travel/youtube/retention`, changeFrequency: "weekly", priority: 0.5 },
-    { url: `${baseUrl}/contact`, changeFrequency: "yearly", priority: 0.6 },
-  ];
+  return routes.map((route) => ({
+    url: `https://laicaios.com${route}`,
+    lastModified: new Date("2026-08-12"),
+    changeFrequency: route.includes("youtube") ? "weekly" : "monthly",
+    priority: route === "" ? 1 : route.includes("youtube") ? 0.7 : 0.8,
+  }));
 }

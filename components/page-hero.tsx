@@ -21,3 +21,4 @@ export function PageHero({ eyebrow, title, copy, primary, secondary }: Props) {
     </section>
   );
 }
+

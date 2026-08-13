@@ -8,3 +8,4 @@ export const project001 = {
   thesis:
     "Project 001 is the first real-world test of whether Laicai OS can incubate and operate an international brand from zero.",
 };
+

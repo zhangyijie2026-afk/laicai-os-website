@@ -9,3 +9,4 @@ export function YoutubeWorkbenchShell({ active, eyebrow, title, copy, children }
 }
 
 export function MetricCard({ label, value, detail, accent = false }: { label: string; value: string; detail: string; accent?: boolean }) { return <article className={`metric-card${accent ? " accent" : ""}`}><span>{label}</span><strong>{value}</strong><small>{detail}</small></article>; }
+

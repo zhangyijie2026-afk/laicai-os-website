@@ -67,3 +67,4 @@ export const workbenchNav = [
   { label: "Daily", href: "/projects/maple-leaf-edu-travel/youtube/daily" },
   { label: "Retention", href: "/projects/maple-leaf-edu-travel/youtube/retention" },
 ];
+

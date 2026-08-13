@@ -14,3 +14,4 @@ export default function Projects() {
     <section className="section shell"><div className="section-label">PROJECT INDEX</div><article className="project-card"><div className="project-meta"><span>{project001.number}</span><span>{project001.status}</span></div><div className="project-content"><div><h2>{project001.name}</h2><p className="project-statement">{project001.positioning}</p></div><div><p>{project001.thesis}</p><Link className="text-link light" href="/projects/maple-leaf-edu-travel">View Project 001 →</Link></div></div></article><div className="future-project"><span>FUTURE PROJECTS</span><p>New projects will be added selectively when they provide a meaningful environment for learning and validation.</p></div></section>
   </>;
 }
+

@@ -10,3 +10,4 @@ export default function Contact() {
     <section className="section shell email-panel"><div><div className="section-label">EMAIL ALTERNATIVE</div><h2>zhangyijie2026@gmail.com</h2><p>Email remains available as an alternative for project, operating-system and partnership conversations.</p></div><a className="primary-button inverted" href="mailto:zhangyijie2026@gmail.com">Send an email</a></section>
   </>;
 }
+

@@ -16,3 +16,4 @@ export default function YoutubeOverview() {
     <p className="data-footnote">Source: YouTube Studio, captured Aug 10, 2026. Reporting data is complete through Aug 9. Lifetime views are the current public-content row total; 28-day metrics include public, private, unlisted and deleted content under YouTube&apos;s metric definition.</p>
   </YoutubeWorkbenchShell>;
 }
+
