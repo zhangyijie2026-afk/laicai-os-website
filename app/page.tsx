@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { CinematicVideo } from "@/components/cinematic-video";
 
 const delay = (milliseconds: number) => ({ animationDelay: `${milliseconds}ms` });
 
 export default function Home() {
   return (
     <div className="cinematic-home">
-      <video aria-hidden="true" className="hero-video" src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260406_094145_4a271a6c-3869-4f1c-8aa7-aeb0cb227994.mp4" autoPlay muted loop playsInline />
+      <CinematicVideo />
       <div className="bottom-blur-overlay" aria-hidden="true" />
       <section className="home-hero">
         <div className="hero-main">
