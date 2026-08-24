@@ -134,3 +134,4 @@ body:not(:has(.cinematic-home)) .footer-grid>div:first-child p,body:not(:has(.ci
 @keyframes orangeAurora{0%{transform:translate3d(-3%,2%,0) scale(.94);opacity:.56}100%{transform:translate3d(4%,-3%,0) scale(1.08);opacity:.9}}
 @keyframes goldDust{from{transform:translate3d(0,0,0)}to{transform:translate3d(82px,-82px,0)}}
 @media(prefers-reduced-motion:reduce){.cloud-layer,.orange-aurora,.gold-dust{animation:none}}
+.insight-badge img{width:24px;height:28px;object-fit:contain}.site-footer .brand-logo{width:32px;height:36px}
