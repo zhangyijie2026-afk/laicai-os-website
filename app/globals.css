@@ -38,6 +38,7 @@ body:has(.cinematic-home) .site-footer{display:none}
 html,body{background:#050505;color:var(--ink)}
 body{background:radial-gradient(circle at 82% 8%,rgba(216,177,90,.1),transparent 28%),radial-gradient(circle at 5% 48%,rgba(93,66,45,.13),transparent 30%),#050505}
 .site-header{color:#fff;background:rgba(5,5,5,.78);border-color:rgba(255,255,255,.1);backdrop-filter:blur(18px)}
+.brand-logo{width:34px;height:38px;object-fit:contain}.brand em{color:rgba(255,255,255,.58);font-style:normal;font-weight:400}
 .mark{color:#080808;border-color:rgba(216,177,90,.65);background:linear-gradient(145deg,#f0d58c,#b98a31)}
 .desktop-nav{color:#c6c3bb}.desktop-nav a:hover{color:#fff}.nav-cta{color:#0a0a0a!important;background:#fff}.mobile-nav>div{color:#fff;background:#111113;border-color:var(--line)}.mobile-nav a:hover{background:rgba(255,255,255,.07)}
 .eyebrow,.section-label{color:#d8b15a}.page-hero,.section{border-color:var(--line)}.hero-copy,.page-hero>p,.large-copy,.split-list>div:last-child,.section-intro{color:var(--muted)}
