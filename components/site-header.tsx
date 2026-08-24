@@ -6,8 +6,8 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="shell nav">
         <Link className="brand" href="/" aria-label="Laicai OS home">
-          <span className="mark">L</span>
-          <span>Laicai OS</span>
+          <img className="brand-logo" src="/laicai-logo-mark.png" alt="" />
+          <span>LAICAI <em>OS</em></span>
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navigation.slice(1).map((item) => (
