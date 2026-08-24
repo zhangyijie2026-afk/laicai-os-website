@@ -4,7 +4,7 @@ import { project001 } from "@/content/projects";
 import { CallToAction } from "@/components/call-to-action";
 import { createMetadata } from "@/lib/metadata";
 
-export const metadata = createMetadata("Project 001 — Maple Leaf Edu Travel", "An incubation thesis applying the Laicai OS operating model to international K12 education travel.", "/projects/maple-leaf-edu-travel");
+export const metadata = createMetadata("Project 001 — Laicai OS", "An incubation thesis applying the Laicai OS operating model to international K12 education travel.", "/projects/maple-leaf-edu-travel");
 
 export default function Project001() {
   return <>
