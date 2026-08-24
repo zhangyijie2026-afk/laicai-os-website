@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { SiteAtmosphere } from "@/components/site-atmosphere";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://laicaios.com"),
@@ -39,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <SiteAtmosphere />
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
