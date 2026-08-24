@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Laicai OS is an AI-powered operating system for building brands, creating content, accumulating knowledge and driving continuous growth.",
   alternates: { canonical: "/" },
-  icons: { icon: "/icon.svg" },
+  icons: { icon: "/laicai-logo-mark.png", shortcut: "/laicai-logo-mark.png", apple: "/laicai-logo-mark.png" },
   openGraph: {
     title: "Laicai OS — Build Brands. Operate Growth.",
     description:
