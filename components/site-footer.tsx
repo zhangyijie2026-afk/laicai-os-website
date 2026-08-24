@@ -6,7 +6,8 @@ export function SiteFooter() {
       <div className="shell footer-grid">
         <div>
           <Link className="brand" href="/">
-            <span className="mark">L</span><span>Laicai OS</span>
+            <img className="brand-logo" src="/laicai-logo-mark.png" alt="" />
+            <span>LAICAI <em>OS</em></span>
           </Link>
           <p>AI operating system for organizations that want to build brands, operate growth and learn continuously.</p>
         </div>
