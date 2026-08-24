@@ -98,3 +98,39 @@ body:not(:has(.cinematic-home)) .workbench-page{background:rgba(19,17,14,.82);bo
 body:not(:has(.cinematic-home)) .site-footer{color:#342b20;background:rgba(255,251,241,.72);border-color:rgba(124,88,38,.16)}
 body:not(:has(.cinematic-home)) .footer-grid>div:first-child p,body:not(:has(.cinematic-home)) .footer-links,body:not(:has(.cinematic-home)) .footer-bottom{color:#6d604e}
 body:not(:has(.cinematic-home)) .footer-links strong{color:#9e6c1f}
+
+/* Stable rendered atmosphere: cinematic orange cloud motion on every inner route */
+body:not(:has(.cinematic-home)){color:#f7f1e7;background:#090705}
+body:not(:has(.cinematic-home))::before,body:not(:has(.cinematic-home))::after{display:none}
+.site-atmosphere{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:#0a0704}
+.cloud-layer{position:absolute;inset:-12%;background-image:url('/golden-clouds-v1.png');background-repeat:no-repeat;background-size:cover;will-change:transform,opacity,background-position}
+.cloud-layer-back{opacity:.58;filter:saturate(.9) sepia(.12) brightness(.62) contrast(1.08);animation:cloudCinemaBack 38s ease-in-out infinite alternate}
+.cloud-layer-front{inset:18% -18% -20%;opacity:.4;filter:saturate(1.05) sepia(.25) brightness(.72) contrast(1.12) blur(2px);mix-blend-mode:screen;animation:cloudCinemaFront 26s ease-in-out infinite alternate-reverse}
+.orange-aurora{position:absolute;inset:-30%;opacity:.8;background:radial-gradient(circle at 76% 42%,rgba(255,125,31,.6),transparent 28%),radial-gradient(circle at 18% 76%,rgba(224,122,32,.36),transparent 31%),linear-gradient(125deg,rgba(0,0,0,.32),transparent 46%,rgba(255,154,54,.16));mix-blend-mode:screen;filter:blur(30px);animation:orangeAurora 18s ease-in-out infinite alternate}
+.gold-dust{position:absolute;inset:0;opacity:.24;background-image:radial-gradient(circle,rgba(255,209,126,.9) 0 1px,transparent 1.6px);background-size:82px 82px;mask-image:linear-gradient(to bottom,transparent,#000 32%,#000 80%,transparent);animation:goldDust 30s linear infinite}
+body:not(:has(.cinematic-home))>.site-header,body:not(:has(.cinematic-home))>main,body:not(:has(.cinematic-home))>.site-footer{position:relative;z-index:2}
+body:not(:has(.cinematic-home)) .site-header{color:#fff;background:rgba(10,7,4,.48);border-color:rgba(255,180,92,.2);box-shadow:0 18px 60px rgba(0,0,0,.2);backdrop-filter:blur(22px)}
+body:not(:has(.cinematic-home)) .brand em{color:rgba(255,255,255,.56)}
+body:not(:has(.cinematic-home)) .desktop-nav{color:#d8cec2}
+body:not(:has(.cinematic-home)) .desktop-nav a:hover{color:#ffb15f}
+body:not(:has(.cinematic-home)) .nav-cta{color:#160c04!important;background:linear-gradient(135deg,#ffc078,#f18b36)}
+body:not(:has(.cinematic-home)) .page-hero,body:not(:has(.cinematic-home)) .section{color:#f8f3eb;border-color:rgba(255,190,111,.2);background:linear-gradient(145deg,rgba(15,10,6,.76),rgba(43,23,10,.5));box-shadow:0 30px 100px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,221,174,.12);backdrop-filter:blur(22px) saturate(1.15)}
+body:not(:has(.cinematic-home)) .page-hero h1,body:not(:has(.cinematic-home)) .section h2,body:not(:has(.cinematic-home)) .section h3{color:#fffaf3}
+body:not(:has(.cinematic-home)) .page-hero>p,body:not(:has(.cinematic-home)) .large-copy,body:not(:has(.cinematic-home)) .split-list>div:last-child,body:not(:has(.cinematic-home)) .section-intro{color:#cfc2b3}
+body:not(:has(.cinematic-home)) .eyebrow,body:not(:has(.cinematic-home)) .section-label{color:#ffad55}
+body:not(:has(.cinematic-home)) .capability-card,body:not(:has(.cinematic-home)) .tile-grid article{color:#f8f2e9;border-color:rgba(255,180,92,.18);background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,139,44,.045));box-shadow:0 18px 50px rgba(0,0,0,.14)}
+body:not(:has(.cinematic-home)) .capability-card:hover{border-color:rgba(255,177,91,.48);background:rgba(255,148,57,.12);transform:translateY(-5px)}
+body:not(:has(.cinematic-home)) .capability-card p,body:not(:has(.cinematic-home)) .tile-grid p,body:not(:has(.cinematic-home)) .numbered-list p,body:not(:has(.cinematic-home)) .capability-title p,body:not(:has(.cinematic-home)) .detail-grid p,body:not(:has(.cinematic-home)) .detail-grid li{color:#cabcac}
+body:not(:has(.cinematic-home)) .case-hero{color:#fff;border-color:rgba(255,188,104,.22);background:linear-gradient(145deg,rgba(12,8,5,.82),rgba(87,39,10,.5));box-shadow:0 30px 110px rgba(0,0,0,.32);backdrop-filter:blur(24px)}
+body:not(:has(.cinematic-home)) .case-hero h1{color:#fff8ef}
+body:not(:has(.cinematic-home)) .case-positioning{color:#d8c8b6}
+body:not(:has(.cinematic-home)) .lifecycle div,body:not(:has(.cinematic-home)) .tag-list span{color:#eee3d7;border-color:rgba(255,180,92,.17);background:rgba(255,255,255,.07)}
+body:not(:has(.cinematic-home)) .primary-button{color:#160c04;background:linear-gradient(135deg,#ffc078,#f18b36)}
+body:not(:has(.cinematic-home)) .text-link{color:#ffb467}
+body:not(:has(.cinematic-home)) .site-footer{color:#f4eadf;background:rgba(10,7,4,.66);border-color:rgba(255,180,92,.15);backdrop-filter:blur(24px)}
+body:not(:has(.cinematic-home)) .footer-grid>div:first-child p,body:not(:has(.cinematic-home)) .footer-links,body:not(:has(.cinematic-home)) .footer-bottom{color:#bfae9c}
+@keyframes cloudCinemaBack{0%{transform:scale(1.08) translate3d(-3%,1%,0);background-position:34% 48%}100%{transform:scale(1.16) translate3d(3%,-2%,0);background-position:66% 52%}}
+@keyframes cloudCinemaFront{0%{transform:scale(1.12) translate3d(4%,2%,0)}100%{transform:scale(1.22) translate3d(-5%,-3%,0)}}
+@keyframes orangeAurora{0%{transform:translate3d(-3%,2%,0) scale(.94);opacity:.56}100%{transform:translate3d(4%,-3%,0) scale(1.08);opacity:.9}}
+@keyframes goldDust{from{transform:translate3d(0,0,0)}to{transform:translate3d(82px,-82px,0)}}
+@media(prefers-reduced-motion:reduce){.cloud-layer,.orange-aurora,.gold-dust{animation:none}}
