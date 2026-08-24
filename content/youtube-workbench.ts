@@ -1,5 +1,5 @@
 export const youtubeSummary = {
-  channel: "MapleLeaf Edu Travel",
+  channel: "Project 001",
   verifiedViews: 5326,
   publishedVideos: 16,
   shorts: 9,
@@ -38,7 +38,7 @@ export const videos = [
   { id: "K4g6fNK_JJc", title: "Would You Dance With a Humanoid Robot in Hangzhou?", format: "Short", published: "Jul 31", views: 863, periodViews: 863, averageWatch: "14s", averageViewed: "72.0%", status: "Repeat tech hook", tone: "positive" },
   { id: "8hae_S3QmkI", title: "Students Try Traditional Hainan Bamboo Pole Dance!", format: "Short", published: "Jul 27", views: 643, periodViews: 643, averageWatch: "15s", averageViewed: "42.9%", status: "Tighten duration", tone: "warning" },
   { id: "sVPHp6HshzM", title: "International Students Try Chinese Calligraphy in China!", format: "Short", published: "Jul 24", views: 327, periodViews: 327, averageWatch: "13s", averageViewed: "68.5%", status: "Strengthen opening", tone: "neutral" },
-  { id: "tavqQDrF7fc", title: "Study tour in Maple Leaf Hainan", format: "Short", published: "Jul 9", views: 41, periodViews: 32, averageWatch: "50s", averageViewed: "36.4%", status: "Recut to <30s", tone: "warning" },
+  { id: "tavqQDrF7fc", title: "Project 001 Hainan Study Tour", format: "Short", published: "Jul 9", views: 41, periodViews: 32, averageWatch: "50s", averageViewed: "36.4%", status: "Recut to <30s", tone: "warning" },
   { id: "_HkLgKMMjUU", title: "Catch Rice Field Fish in a Dong Village, Guizhou", format: "Short", published: "Jul 9", views: 41, periodViews: 13, averageWatch: "28s", averageViewed: "143.3%", status: "Retest strong rewatch", tone: "positive" },
   { id: "5QuYY5JJWiY", title: "Hainan Study Tour in China | Russian Students, Sanya Sea & AI", format: "Video", published: "Jul 1", views: 40, periodViews: 17, averageWatch: "35s", averageViewed: "21.8%", status: "Improve packaging", tone: "neutral" },
   { id: "dO2xHE6sNeE", title: "Inner Mongolia: desert, grassland, milk tea and yurt", format: "Short", published: "Jun 14", views: 38, periodViews: 5, averageWatch: "—", averageViewed: "—", status: "Repackage", tone: "neutral" },
